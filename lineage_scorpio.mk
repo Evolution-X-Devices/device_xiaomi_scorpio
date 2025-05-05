@@ -20,6 +20,9 @@ $(call inherit-product, device/xiaomi/scorpio/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# EvolutionX useful flags
+TARGET_USES_PICO_GAPPS := true
+
 # Device identifier. This must come after all inclusions
 PRODUCT_NAME := lineage_scorpio
 PRODUCT_DEVICE := scorpio
